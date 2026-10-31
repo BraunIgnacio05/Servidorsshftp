@@ -85,7 +85,7 @@ El terminal de Powershell mostrará el acceso exitoso a nuestro servidor SSH. A 
 
 ![Acceso a Ubuntu Server](/IMG/ClienteSsh@192.168.0.32.png)
 
-### Para usar FTP: 
+### Para usar SFTP: 
 * Abrimos Filezilla en nuestro W11 y colocamos la dirección ip del servidor, Usuario a seleccionar, contraseña del usuario y colocamos el puerto 22 (sftp) y seleccionamos "conexión rápida"
 ![Parametros de conexión](/IMG/2026-09-15%2012_59_24-sftp___ClienteSsh@192.168.0.32%20-%20FileZilla.png)
 * Una vez conectados al servidor, podemos ver que en la parte inferior de la interfaz podemos acceder a todos los directorios y archivos, donde ahora, podemos cargar o descargar archivos entre ambos terminales.
@@ -93,6 +93,7 @@ El terminal de Powershell mostrará el acceso exitoso a nuestro servidor SSH. A 
 ---
 ## Conclusión:
 En esta practica podemos ver que con unos pocos comandos en nuestro ubuntu server, podemos implementar un servidor SSH y FTP de una forma basica. Si bien este servidor SSH y FTP esta montado sobre una maquina virtual, se podria replicar de igual manera en 2 equipos distintos. 
+Con FileZilla podemos aprovechar la capacidad de transferencia de archivos con SFTP usando el puerto 22. Igualmente también podríamos usar el puerto 21 para transferencia de archivos sin cifrado entre terminales.
 
 Esta infraestructura luego de crearla, podemos darnos cuenta que solo tenemos dos usuarios, el usuario sudo local y el remoto, sin ninguna oportunidad de albergar usuarios invitados ademas de tener una seguridad un tanto cuestionable. 
 
